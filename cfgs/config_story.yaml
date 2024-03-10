@@ -1,0 +1,23 @@
+llm:
+    host: "10.1.8.43:1234"
+    name: "lm-studio"
+    temperature: 0.01
+embedding:
+    name: "BAAI/bge-base-zh-v1.5"
+    dim: 768 
+rerank:
+    name: "BAAI/bge-reranker-large"
+milvus:
+    host: "10.1.10.20" 
+    port: "19530"
+    collection_name: "story_rag"
+    retrieve_topk: 500
+    window_size: 4
+    rerank_topk: 15
+pipeline:
+    collection_name: "story_rag" 
+    chunk_size: 500
+    retrieve_topk: 8
+    
+
+
